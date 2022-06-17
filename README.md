@@ -1,2 +1,2 @@
 # js-quack
-An estoric subset of JS
+An esoteric subset of JS
