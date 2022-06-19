@@ -1,0 +1,21 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:mocha/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "mocha"
+    ],
+    "rules": {
+        "prefer-arrow-callback": "off"
+    }
+}

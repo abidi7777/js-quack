@@ -1,0 +1,59 @@
+{
+  "name": "js-quack",
+  "version": "1.0.0",
+  "description": "An esoteric subset of JS",
+  "source": "./src/js-quack.js",
+  "main": "./dist/js-quack.js",
+  "module": "./dist/js-quack.module.js",
+  "web": "./dist/js-quack.web.js",
+  "scripts": {
+    "build": "rimraf ./dist && parcel build --no-source-maps",
+    "test": "NODE_ENV=test mocha --require @babel/register ./src/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidi7777/js-quack.git"
+  },
+  "keywords": [
+    "esoteric",
+    "js",
+    "weird"
+  ],
+  "author": "abidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abidi7777/js-quack/issues"
+  },
+  "homepage": "https://github.com/abidi7777/js-quack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/register": "^7.17.7",
+    "chai": "^4.3.6",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-mocha": "^10.0.5",
+    "mocha": "^10.0.0",
+    "parcel": "^2.6.1",
+    "rimraf": "^3.0.2"
+  },
+  "targets": {
+    "main": {
+      "optimize": true
+    },
+    "module": {
+      "optimize": true
+    },
+    "web": {
+      "optimize": true,
+      "engines": {
+        "browsers": "cover 99.5%"
+      }
+    }
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "isLibrary": true
+}
